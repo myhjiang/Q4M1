@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><wps:Execute version="1.0.0" service="WPS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wps/1.0.0" xmlns:wfs="http://www.opengis.net/wfs" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:wcs="http://www.opengis.net/wcs/1.1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0 http://schemas.opengis.net/wps/1.0.0/wpsAll.xsd">
+  <ows:Identifier>convex_wps_hull</ows:Identifier>
+  <wps:DataInputs>
+    <wps:Input>
+      <ows:Identifier>features</ows:Identifier>
+      <wps:Data>
+        <wps:ComplexData mimeType="application/json">
+        <![CDATA[
+        {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.197844505310059,
+              56.15420304064591
+            ],
+            [
+              10.194625854492188,
+              56.15135858366549
+            ],
+            [
+              10.201148986816406,
+              56.148179235499356
+            ],
+            [
+              10.208401679992676,
+              56.149828704599194
+            ],
+            [
+              10.207715034484863,
+              56.15453766880024
+            ],
+            [
+              10.197844505310059,
+              56.15420304064591
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.176773071289062,
+              56.14440192363974
+            ],
+            [
+              10.18054962158203,
+              56.13560269465829
+            ],
+            [
+              10.201492309570312,
+              56.1362722720041
+            ],
+            [
+              10.196514129638672,
+              56.14325431233707
+            ],
+            [
+              10.176773071289062,
+              56.14440192363974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.172138214111328,
+              56.15664097903841
+            ],
+            [
+              10.18655776977539,
+              56.151573718024444
+            ],
+            [
+              10.188102722167969,
+              56.15444206105352
+            ],
+            [
+              10.190849304199219,
+              56.1598913229285
+            ],
+            [
+              10.172138214111328,
+              56.15664097903841
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}]]>
+        </wps:ComplexData>
+      </wps:Data>
+    </wps:Input>
+  </wps:DataInputs>
+  <wps:ResponseForm>
+    <wps:RawDataOutput mimeType="application/json">
+      <ows:Identifier>result</ows:Identifier>
+    </wps:RawDataOutput>
+  </wps:ResponseForm>
+</wps:Execute>
